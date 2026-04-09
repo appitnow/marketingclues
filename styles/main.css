@@ -1,0 +1,520 @@
+/* MARKETING CLUES - MAIN STYLESHEET */
+
+/* === RESET & BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333333;
+    background-color: #FFFFFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* === TYPOGRAPHY === */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    color: #000000;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.2rem;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.lead {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1A1A5E;
+    margin-bottom: 1.5rem;
+}
+
+/* === BUTTONS === */
+.cta-button {
+    display: inline-block;
+    background-color: #CC0000;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 40px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(204, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #A00000;
+    box-shadow: 0 6px 15px rgba(204, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.cta-button.large {
+    font-size: 1.25rem;
+    padding: 20px 50px;
+}
+
+.cta-button.extra-large {
+    font-size: 1.5rem;
+    padding: 24px 60px;
+}
+
+/* === HERO SECTION === */
+.hero {
+    background: linear-gradient(135deg, #1A1A5E 0%, #0D0D4D 100%);
+    color: #FFFFFF;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #FFFFFF;
+    max-width: 900px;
+    margin: 0 auto 1.5rem;
+}
+
+.hero .subheadline {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #5BC0DE;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+}
+
+.hero .cta-button {
+    margin: 2rem 0 1.5rem;
+}
+
+.hero .supporting-text {
+    font-size: 1.125rem;
+    color: #CCCCCC;
+    font-style: italic;
+}
+
+/* === MAGAZINE PREVIEW === */
+.magazine-preview {
+    padding: 80px 0;
+    background-color: #F8F8F8;
+}
+
+.magazine-showcase {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.magazine-cover {
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.feature {
+    text-align: center;
+    padding: 2rem;
+}
+
+.feature h3 {
+    color: #1A1A5E;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    font-size: 1.125rem;
+    color: #666666;
+}
+
+/* === VALUE PROPOSITIONS === */
+.value-props {
+    padding: 80px 0;
+}
+
+.value-block {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    padding: 3rem;
+    background-color: #FFFFFF;
+    border-left: 5px solid #5BC0DE;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.value-block:nth-child(even) {
+    border-left-color: #CC0000;
+}
+
+.value-content h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+.red-highlight {
+    background-color: rgba(204, 0, 0, 0.1);
+    color: #CC0000;
+}
+
+.blue-highlight {
+    background-color: rgba(91, 192, 222, 0.1);
+    color: #1A1A5E;
+}
+
+.value-content p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+/* === TRY BEFORE YOU BUY === */
+.try-before-buy {
+    padding: 80px 0;
+    background-color: #F8F8F8;
+    text-align: center;
+}
+
+.try-before-buy p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+.try-before-buy .cta-button {
+    margin-top: 2rem;
+}
+
+/* === SUBSCRIPTION OFFER === */
+.subscription-offer {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.price-box {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 3rem;
+    background: linear-gradient(135deg, #DAA520 0%, #FFD700 100%);
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(218, 165, 32, 0.3);
+}
+
+.price-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1A1A5E;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #1A1A5E;
+    margin-bottom: 0.5rem;
+}
+
+.price .strike {
+    font-size: 2rem;
+    text-decoration: line-through;
+    opacity: 0.6;
+    margin-right: 1rem;
+}
+
+.price .main-price {
+    color: #CC0000;
+}
+
+.price-detail {
+    font-size: 1.125rem;
+    color: #1A1A5E;
+    font-style: italic;
+}
+
+.included-list {
+    max-width: 700px;
+    margin: 3rem auto;
+    text-align: left;
+}
+
+.included-list ul {
+    list-style: none;
+}
+
+.included-list li {
+    font-size: 1.125rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.included-list li:last-child {
+    border-bottom: none;
+}
+
+.guarantee-text {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #666666;
+    font-style: italic;
+}
+
+/* === TESTIMONIALS === */
+.testimonials {
+    padding: 80px 0;
+    background-color: #F8F8F8;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.testimonial {
+    background-color: #FFFFFF;
+    padding: 2.5rem;
+    border: 3px solid #1A1A5E;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+    font-size: 1.125rem;
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.quote::before {
+    content: '"';
+    font-size: 4rem;
+    font-family: Georgia, serif;
+    color: #5BC0DE;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    opacity: 0.3;
+}
+
+.attribution {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1A1A5E;
+}
+
+/* === FAQ === */
+.faq {
+    padding: 80px 0;
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #EEEEEE;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item h3 {
+    color: #1A1A5E;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.faq-item p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+}
+
+.faq-item ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.faq-item li {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+}
+
+/* === FINAL CTA === */
+.final-cta {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #1A1A5E 0%, #0D0D4D 100%);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.final-cta h2 {
+    color: #FFFFFF;
+}
+
+.final-cta .lead {
+    color: #5BC0DE;
+    font-size: 1.5rem;
+}
+
+.final-cta .price-reminder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #DAA520;
+    margin: 2rem 0;
+}
+
+.final-cta .cta-button {
+    margin: 2rem 0;
+}
+
+.final-cta .alt-link {
+    font-size: 1.125rem;
+    margin-top: 2rem;
+}
+
+.final-cta .alt-link a {
+    color: #5BC0DE;
+    text-decoration: underline;
+}
+
+.final-cta .alt-link a:hover {
+    color: #FFFFFF;
+}
+
+/* === FOOTER === */
+footer {
+    background-color: #1A1A5E;
+    color: #FFFFFF;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: #5BC0DE;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero .subheadline {
+        font-size: 1.25rem;
+    }
+
+    .magazine-preview,
+    .value-props,
+    .try-before-buy,
+    .subscription-offer,
+    .testimonials,
+    .faq,
+    .final-cta {
+        padding: 60px 0;
+    }
+
+    .magazine-cover {
+        max-width: 300px;
+    }
+
+    .features-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .value-block {
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .price-box {
+        padding: 2rem;
+    }
+
+    .price {
+        font-size: 2.5rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 15px 30px;
+    }
+
+    .cta-button.large {
+        font-size: 1.125rem;
+        padding: 18px 35px;
+    }
+
+    .cta-button.extra-large {
+        font-size: 1.25rem;
+        padding: 20px 40px;
+    }
+}
